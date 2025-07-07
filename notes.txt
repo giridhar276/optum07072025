@@ -1,0 +1,140 @@
+int a = 10;
+
+Everything in python is object
+** Every object contains methods ****
+
+
+python objects
+----------------------
+
+
+number
+------
+number can be integer or decimal or octal or hexa.
+val = 10
+aval = 54.43
+
+
+string
+------
+string is defined in single or double or triple quotes.
+
+aname = 'python programming'
+bname = "java programming"
+cname = """scala programming"""
+
+
+
+list
+------
+list contains set of elements.
+Elements can be numbers or strings or any combination like list of lists , list of dicts
+list is defined in [].
+
+
+alist = [10,20,30,40]
+blist = ["python","java",56,3.54]
+clist = [[10,20],[30,40],[40,50]]
+dlist = [{"chap1":10,"chap2":20},{"chap3":30,"chap4":40}]
+
+
+
+tuple  ( immutable  unchangeable   uneditable)
+------
+tuple contains set of elements.
+Elements can be numbers or strings or any combination like list of lists , list of dicts
+tuple is defined in ().
+*** elements inside tuple cannot be modified directly ****
+
+atup  = (30,40,50,50)
+btup = ("java","oracle")
+
+
+dictionary (  json  hashmap  hash  associativearray   pairs)
+-----------
+dictionary is about keys and values.
+key would be either number or string
+value can be number or string or list or tuple or dictionary.
+
+syntax:   object = { key:value , key:value , key:value}
+example:   book  = {"chap1":10 ,"chap2":20 ,"chap3":30}
+           data  = {1:2,3:4,5:6}
+           book  = {"chap1":["rita","UK"] ,"chap2":["ram","UK"]}
+
+
+set ( venn diagarms)
+-----
+set is UNORDERED collection of UNIQUE values of SAME type.
+
+aset = {10,10,10,20,30,30,30}
+
+
+functions
+------------
+builtin functions
+user defined functions
+
+
+
+builtin functions
+--------------------------
+print(dir(__builtins__))
+
+
+user defined function | definition | block | subroutine | submodule
+-----------------------------------------------------------------
+- code reusability purpose
+- define block once and call it for multiple times.
+
+
+passing arguments
+-------------------
+fixed arguments
+default arguments
+keyword arguments
+variable length arguments
+
+
+
+
+
+
+
+
+file handling
+-------------------
+working with flat files ( txt  csv  conf  log   prop   json  yaml  xml)
+
+
+working with third party files ( xlsx pdf  zip  pptx 7z   tar):
+---------------------------------
+
+
+
+
+working with flat files
+---------------------------
+read mode r
+write mode  w  
+append mode a
+
+
+opening the file
+-------------------
+
+syntax:  object = open(filename,mode)
+
+example:   fobj = open("customers.txt","r")
+           fobj = open("customers.txt","w")
+           #case1: if the file is not existing.. file will be created first
+           #case2: if the file is already existing , it overwrites the existing content
+
+           fobj = open("customers.txt","a")
+           #case1: if the file is not existing.. file will be created first
+           #case2: if the file is already existing , it appends the new content to existing data
+           
+
+
+closing the file
+-----------------
+object.close()
