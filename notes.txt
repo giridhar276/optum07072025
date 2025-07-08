@@ -125,6 +125,8 @@ opening the file
 syntax:  object = open(filename,mode)
 
 example:   fobj = open("customers.txt","r")
+
+
            fobj = open("customers.txt","w")
            #case1: if the file is not existing.. file will be created first
            #case2: if the file is already existing , it overwrites the existing content
@@ -138,3 +140,174 @@ example:   fobj = open("customers.txt","r")
 closing the file
 -----------------
 object.close()
+
+
+read operation 
+-------------------
+
+- read the file line by line using fobj
+- fobj.readlines()
+- fobj.read()
+- using csv library 
+- using pandas library
+
+
+
+header files in c
+-------------------------
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+#include<string.h>
+#include<stdmanip.h>
+#include<graphics.h>
+#include<time.h>
+#include<datetime.h>
+#include<stdlib.h>
+
+
+python
+-------
+
+library | module | package
+----------------------------------
+
+There are 2 types of libraries
+
+
+1. builtin libraries  ( 3500+ libraries)
+-------------------------------------
+builtin libraries are generally used by everyone ( OS related libraries, mail related, string operations
+socket related, network, math )
+
+
+2. third party libraries
+------------------------
+Depending on the requirement(cloud automation, test automation, ML , DL , analytics, remote mgmt),
+ developer has to install third party library from www.pypi.org
+using pip tool
+
+
+How to check whether any library is installed or not ?
+----------------------------
+simply ipmort the module and run the code
+
+
+How to install library ?
+----------------------------
+pip install libaryname
+
+
+Install from Requirements File
+-----------------------------
+pip install -r requirements.txt
+
+
+freeze installed packages
+-------------------------------
+pip freeze > requirements.txt
+
+
+Show Installed Packages
+---------------------------
+pip list
+
+
+how metadata about the library
+-----------------------------------
+pip show pymysql
+
+
+uninstall packages
+-------------------
+pip uninstall pymysql
+
+
+
+
+virtual envionments
+--------------------
+
+
+project1
+---------
+PyMySQL 1.1.1
+
+
+
+
+project2
+--------
+PyMySQL 1.1.0
+
+
+###################################
+
+python 3.11
+-----------
+tasks
+
+
+python 3.13
+----------
+tasks
+
+
+
+virtual environments
+-------------------------
+
+
+creating virtual environment
+----------------------------
+python -m venv <yourenvname>
+
+Eg:  python -m venv myenv1
+
+
+activate your environment 
+---------------------------
+windows :  .\myenv1\Scripts\activate
+
+linux   :   source ./venv/bin/activate
+
+
+deactivate environment 
+----------------------
+deactivate
+
+
+
+There are two ways of virtual environements
+----------------------------------------------
+venv
+conda
+virtualenv
+
+
+
+1.using venv library
+
+2. using conda tool( it is installed with anaconda software)
+---------------------------------------------------------
+open anaconda prompt from the start menu
+
+conda create --name env1 python=3.9.2
+
+ To activate this environment, use
+----------------------------------------
+conda activate env1
+
+deactivate an active environment
+-------------------------------------
+conda deactivate
+
+
+all the envionments are avaialble in
+------------------------------------
+C:\Users\Admin\.conda\
+
+
+
+.py 
+.ipynb --> interactive python notebook, jupyter notebook , notebook
